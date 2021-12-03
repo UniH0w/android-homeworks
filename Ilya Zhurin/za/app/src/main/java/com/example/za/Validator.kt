@@ -1,5 +1,6 @@
 package com.example.za
 
+
 class Validator {
         fun email_all(email:String ):Boolean {
             var resultemail: Boolean = false

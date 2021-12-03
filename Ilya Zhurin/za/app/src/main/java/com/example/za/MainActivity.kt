@@ -1,25 +1,25 @@
 package com.example.za
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.za.databinding.ActivityMainBinding
-import  com.google.android.material.button.MaterialButton
+
+
+
+
+
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     val validatorEror = Validator()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.MainSignButton.setOnClickListener {
             val email = binding.enterEmail.text.toString()
             val password = binding.confirmPassword.text.toString()
-
-
             if (validatorEror.email_all(email) && validatorEror.enterPassword_regestration(password) == true){
                 val intent = Intent(this,ProfileActivity::class.java)
                 intent.putExtra("name",email)
@@ -38,13 +38,9 @@ class MainActivity : AppCompatActivity() {
         binding.mainTextSingnUp.setOnClickListener{
             val intent = Intent(this,RegistrationActivity::class.java)
             startActivity(intent)
-        }
-
-
+         }
     }
-
-
-    }
+}
 
 
 
