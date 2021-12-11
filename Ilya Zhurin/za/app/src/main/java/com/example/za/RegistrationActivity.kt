@@ -17,18 +17,17 @@ class RegistrationActivity : AppCompatActivity() {
             val email = binding.registerEnterEmail.text.toString()
             val password = binding.registerPasswrord.text.toString()
             val name = binding.registrName.text.toString()
-            if (validatorEror.email_all(email) &&
-                validatorEror.enterPassword_regestration(password) == true)
-            {
+            if (validatorEror.email_all(email) && validatorEror.enterPassword_regestration(password)
+            ) {
                 val intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("Name", name)
                 startActivity(intent)
-            } else {
-                if (validatorEror.email_all(email) == false) {
-
+            }
+            else {
+                if (!validatorEror.email_all(email)) {
                     binding.registerEnterEmail.error = "Введена не коректная почта"
                 }
-                if (validatorEror.enterPassword_regestration(password) == false) {
+                if (!validatorEror.enterPassword_regestration(password)) {
                     binding.registerPasswrord.error = "Вы ввели не коректный пароль"
                 }
             }
