@@ -20,18 +20,18 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, ProfileActivity::class.java)
                 intent.putExtra("name", email)
                 startActivity(intent)
-            }
-            else {
-                if (validatorEror.email_all(email) == false) {
-                    binding.enterEmail.error = "Введена не коректная почта"}
-                    if (validatorEror.enterPassword_regestration(password) == false) {
+            } else {
+                if (!validatorEror.email_all(email)) {
+                    binding.enterEmail.error = "Введена не коректная почта"
+                }
+                if (!validatorEror.enterPassword_regestration(password)) {
                         binding.confirmPassword.error = "Вы ввели не коректный пароль"
-                    }
                 }
             }
+        }
         binding.mainTextSingnUp.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
-         }
+        }
     }
 }

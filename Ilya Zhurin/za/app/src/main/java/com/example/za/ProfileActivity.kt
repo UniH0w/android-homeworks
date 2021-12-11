@@ -10,7 +10,7 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val receivedText = intent.extras?.getString("name","Hello")
+        val receivedText = intent.extras?.getString("name", "Hello")
         binding.profileText.text = receivedText
     }
 }

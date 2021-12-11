@@ -1,10 +1,9 @@
 package com.example.za
 
+import android.os.Bundle
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import com.example.za.databinding.ActivityRegistrationBinding
-
 
 class RegistrationActivity : AppCompatActivity() {
     val validatorEror = Validator()
@@ -22,8 +21,7 @@ class RegistrationActivity : AppCompatActivity() {
                 val intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("Name", name)
                 startActivity(intent)
-            }
-            else {
+            } else {
                 if (!validatorEror.email_all(email)) {
                     binding.registerEnterEmail.error = "Введена не коректная почта"
                 }
