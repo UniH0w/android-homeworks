@@ -1,7 +1,7 @@
 package com.example.za
 
-import android.os.Bundle
 import android.content.Intent
+import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.za.databinding.ActivityRegistrationBinding
 

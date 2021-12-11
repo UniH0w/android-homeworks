@@ -1,7 +1,7 @@
 package com.example.za
 
 class Validator {
-    fun email_all(email:String ) : Boolean {
+    fun email_all(email: String ): Boolean {
         var resultemail = false
         if (email.length >= 6 && (email.contains("@"))) {
             resultemail = true

@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                     binding.enterEmail.error = "Введена не коректная почта"
                 }
                 if (!validatorEror.enterPassword_regestration(password)) {
-                        binding.confirmPassword.error = "Вы ввели не коректный пароль"
+                    binding.confirmPassword.error = "Вы ввели не коректный пароль"
                 }
             }
         }
