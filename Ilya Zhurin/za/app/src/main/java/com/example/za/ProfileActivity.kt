@@ -6,7 +6,8 @@ import com.example.za.databinding.ActivityProfileBinding
 
 class ProfileActivity : AppCompatActivity() {
     lateinit var binding: ActivityProfileBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)

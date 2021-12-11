@@ -17,7 +17,9 @@ class RegistrationActivity : AppCompatActivity() {
             val email = binding.registerEnterEmail.text.toString()
             val password = binding.registerPasswrord.text.toString()
             val name = binding.registrName.text.toString()
-            if (validatorEror.email_all(email) && validatorEror.enterPassword_regestration(password) == true) {
+            if (validatorEror.email_all(email) &&
+                validatorEror.enterPassword_regestration(password) == true)
+            {
                 val intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("Name", name)
                 startActivity(intent)

@@ -5,11 +5,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.za.databinding.ActivityMainBinding
 
-
-
-
-
-
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     val validatorEror = Validator()
@@ -20,43 +15,28 @@ class MainActivity : AppCompatActivity() {
         binding.MainSignButton.setOnClickListener {
             val email = binding.enterEmail.text.toString()
             val password = binding.confirmPassword.text.toString()
-            if (validatorEror.email_all(email) && validatorEror.enterPassword_regestration(password) == true){
+            if (validatorEror.email_all(email) &&
+                validatorEror.enterPassword_regestration(password) == true)
+            {
                 val intent = Intent(this,ProfileActivity::class.java)
-                intent.putExtra("name",email)
+                intent.putExtra("name", email)
                 startActivity(intent)
             }
             else {
-                if (validatorEror.email_all(email) == false) {
+                if (validatorEror.email_all(email) == false)
+                {
 
                     binding.enterEmail.error = "Введена не коректная почта"}
-                    if (validatorEror.enterPassword_regestration(password) == false) {
+                    if (validatorEror.enterPassword_regestration(password) == false)
+                    {
 
                         binding.confirmPassword.error = "Вы ввели не коректный пароль"
                     }
                 }
             }
         binding.mainTextSingnUp.setOnClickListener{
-            val intent = Intent(this,RegistrationActivity::class.java)
+            val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
          }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
