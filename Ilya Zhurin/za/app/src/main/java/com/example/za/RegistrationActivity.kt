@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.za.databinding.ActivityRegistrationBinding
 
 class RegistrationActivity : AppCompatActivity() {
-    val validatorEror = Validator(this)
     lateinit var binding: ActivityRegistrationBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
@@ -38,6 +37,5 @@ class RegistrationActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
     }
 }

@@ -17,25 +17,20 @@ class Validator(private val context: Context) {
     }
     fun CheckPassword(passwordValue: String): String? {
         return when {
-            passwordValue.isBlank()
-            ->
+            passwordValue.isBlank() ->
                 context.getString(R.string.error_empty)
-            passwordValue.length <= 7
-            ->
+            passwordValue.length <= 7 ->
                 context.getString(R.string.error_password_length)
             else -> null
         }
     }
     fun CheckEqualPassword(passwordValue: String, passwordConfirmValue: String): String? {
         return when {
-            passwordValue.isBlank()
-            ->
+            passwordValue.isBlank() ->
                 context.getString(R.string.error_empty)
-            passwordConfirmValue.isBlank()
-            ->
+            passwordConfirmValue.isBlank() ->
                 context.getString(R.string.error_empty)
-            passwordValue != passwordConfirmValue
-            ->
+            passwordValue != passwordConfirmValue ->
                 context.getString(R.string.error_password_different)
             else -> null
         }

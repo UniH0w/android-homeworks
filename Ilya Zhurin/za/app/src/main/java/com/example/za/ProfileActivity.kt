@@ -15,21 +15,20 @@ class ProfileActivity : AppCompatActivity() {
 
         binding.bottomNavigationView.setOnItemSelectedListener { menuItem->
             when (menuItem.itemId) {
-                R.id.profileItemMenu-> {
+                R.id.profileItemMenu -> {
                     supportFragmentManager
                         .beginTransaction()
                         .replace(R.id.fragmentContainerViewProfile, ProfileFragment())
                         .commit()
                 }
-                R.id.tasksItemMenu-> {
+                R.id.tasksItemMenu -> {
                     supportFragmentManager
                         .beginTransaction()
                         .replace(R.id.fragmentContainerViewProfile, TasksFragment())
                         .commit()
                 }
-
             }
-             true
+            true
         }
     }
 }
