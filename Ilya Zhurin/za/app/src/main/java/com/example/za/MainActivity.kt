@@ -7,26 +7,23 @@ import com.example.za.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
-    val validatorEror = Validator()
+    val valid = Validator(this)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.MainSignButton.setOnClickListener {
-            val email = binding.enterEmail.text.toString()
-            val password = binding.confirmPassword.text.toString()
-            if (validatorEror.email_all(email) && validatorEror.enterPassword_regestration(password)
+            val passwrod = binding.editTextPasswordLogin.text.toString()
+            val email = binding.editTextEmailLogin.text.toString()
+
+            binding.inputLayoutEmailLogin.error = valid.CheckEmailAll(email)
+            binding.inputLayoutPasswordLogin.error = valid.CheckPassword(passwrod)
+            if (binding.inputLayoutEmailLogin.error == null &&
+                binding.inputLayoutPasswordLogin.error == null
             ) {
                 val intent = Intent(this, ProfileActivity::class.java)
-                intent.putExtra("name", email)
+                intent.putExtra("Name", email)
                 startActivity(intent)
-            } else {
-                if (!validatorEror.email_all(email)) {
-                    binding.enterEmail.error = "Введена не коректная почта"
-                }
-                if (!validatorEror.enterPassword_regestration(password)) {
-                    binding.confirmPassword.error = "Вы ввели не коректный пароль"
-                }
             }
         }
         binding.mainTextSingnUp.setOnClickListener {

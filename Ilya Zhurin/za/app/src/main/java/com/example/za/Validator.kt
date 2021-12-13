@@ -1,18 +1,44 @@
 package com.example.za
 
-class Validator {
-    fun email_all(email: String): Boolean {
-        var resultemail = false
-        if (email.length >= 6 && (email.contains("@"))) {
-            resultemail = true
+import android.content.Context
+
+class Validator(private val context: Context) {
+
+    fun CheckEmailAll(email: String): String? {
+        return when {
+            email.isBlank() -> context.getString(R.string.error_empty)
+            email.length <= 6 -> context.getString(R.string.error_email_length)
+            !(email.contains("@")) -> context.getString(R.string.error_email_sign)
+            else -> null
         }
-        return resultemail
     }
-    fun enterPassword_regestration(password: String): Boolean {
-        var resultpassword = false
-        if (password.length >= 7) {
-            resultpassword = true
+    fun CheckPassword(passwordValue: String): String? {
+        return when {
+            passwordValue.isBlank() ->
+                context.getString(R.string.error_empty)
+            passwordValue.length <= 7 ->
+                context.getString(R.string.error_password_length)
+            else -> null
         }
-        return resultpassword
+    }
+    fun CheckEqualPassword(passwordValue: String, passwordConfirmValue: String): String? {
+        return when {
+            passwordValue.isBlank() ->
+                context.getString(R.string.error_empty)
+            passwordConfirmValue.isBlank() ->
+                context.getString(R.string.error_empty)
+            passwordValue != passwordConfirmValue ->
+                context.getString(R.string.error_password_different)
+            else -> null
+        }
+    }
+    fun CheckName(nameValue: String): String? {
+        return when {
+            nameValue.isBlank() ->
+                context.getString(R.string.error_empty)
+            nameValue.length <= 4 ->
+                context.getString(R.string.error_name_length)
+            else -> null
+        }
     }
 }
