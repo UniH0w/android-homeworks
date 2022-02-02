@@ -16,8 +16,7 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentProfileBinding.inflate(inflater, container, false)
-        binding.profileExit.setOnClickListener { activity?.finish()
-        }
+        binding.profileExit.setOnClickListener { activity?.finish() }
         val name = activity?.intent?.extras?.getString("Name")
         binding.profileText.text = getString(R.string.profile_greeting, name)
         return binding.root
