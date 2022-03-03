@@ -11,11 +11,7 @@ class GetStartedActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityGetStartedBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.GetStartedButton.setOnClickListener {
-
-        binding.GetStartedButtion.setOnClickListener {
-
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
@@ -27,12 +24,6 @@
             android:layout_height="224dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_profile_themes"
-        <ImageView
-            android:id="@+id/profilebackground"
-            android:layout_width="422dp"
-            android:layout_height="224dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_profilethems"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -42,10 +33,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_ellipse_left"
-            android:id="@+id/profile_elipse"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_elipce_legsg"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -77,8 +64,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="30dp"
                     android:layout_marginStart="350dp"
-                    android:src="@drawable/ic_exit"
-                    />
+                    android:src="@drawable/ic_exit" />
         </com.google.android.material.appbar.CollapsingToolbarLayout>
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -91,50 +77,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
                 </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-            android:id="@+id/profile_elipse_top"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_elepcic_top12"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/profile_photos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="87dp"
-            android:src="@drawable/ic_photo_profile"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/profilebackground" />
-
-        <ImageView
-            android:id="@+id/profile_exit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="51dp"
-            android:layout_marginEnd="18dp"
-            android:src="@drawable/ic_exit"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/profile_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppins_medium"
-            android:text="@string/welcome_profile"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="@+id/profile_photos"
-            app:layout_constraintStart_toStartOf="@+id/profile_photos"
-            app:layout_constraintTop_toBottomOf="@+id/profile_photos" />
-</androidx.constraintlayout.widget.ConstraintLayout>

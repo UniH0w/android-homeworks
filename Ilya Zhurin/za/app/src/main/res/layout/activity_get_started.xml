@@ -22,12 +22,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_eclipse_top"
-        />
+        app:srcCompat="@drawable/ic_eclipse_top" />
 
     <TextView
         android:id="@+id/get_started_text_Lets"
-        android:id="@+id/getstarted_text_Lets"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -42,8 +40,6 @@
 
     <TextView
         android:id="@+id/get_started_text_Lorem"
-        android:id="@+id/getsrarted_text_Lorem"
-
         android:layout_width="278dp"
         android:layout_height="99dp"
         android:fontFamily="@font/poppins_medium"
@@ -51,19 +47,12 @@
         android:text="@string/lorem_ipsum_started"
         android:textColor="@color/black"
         android:textSize="13sp"
-
         app:layout_constraintEnd_toEndOf="@+id/get_started_text_Lets"
         app:layout_constraintStart_toStartOf="@+id/get_started_text_Lets"
         app:layout_constraintTop_toBottomOf="@+id/get_started_text_Lets" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/Get_Started_button"
-
-        app:layout_constraintEnd_toEndOf="@+id/getstarted_text_Lets"
-        app:layout_constraintStart_toStartOf="@+id/getstarted_text_Lets"
-        app:layout_constraintTop_toBottomOf="@+id/getstarted_text_Lets" />
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/Get_Started_buttion"
         android:layout_width="309dp"
         android:layout_height="64dp"
         android:layout_marginTop="36dp"
@@ -74,16 +63,10 @@
         android:textSize="18sp"
 
         app:cornerRadius="10dp"
-
         app:layout_constraintEnd_toEndOf="@+id/get_started_text_Lorem"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="@+id/get_started_text_Lorem"
         app:layout_constraintTop_toBottomOf="@+id/get_started_text_Lorem" />
-
-        app:layout_constraintEnd_toEndOf="@+id/getsrarted_text_Lorem"
-        app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="@+id/getsrarted_text_Lorem"
-        app:layout_constraintTop_toBottomOf="@+id/getsrarted_text_Lorem" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -94,9 +77,6 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-
         app:srcCompat="@drawable/ic_photo_get_started_activity" />
-
-        app:srcCompat="@drawable/ic_foto_get_started_activity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
