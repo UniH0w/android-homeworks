@@ -19,7 +19,7 @@
             android:scrollbarSize="30dp">
 
         <ImageView
-            android:id="@+id/profile_background"
+            android:id="@+id/imageViewBackgroundProfileFragment"
             android:layout_width="422dp"
             android:layout_height="224dp"
             android:scaleType="centerCrop"
@@ -29,7 +29,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/profile_ellipse"
+            android:id="@+id/imageViewEllipseProfileFragment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_ellipse_left"
@@ -37,7 +37,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/profile_ellipse_top"
+            android:id="@+id/imageViewEllipseTopProfileFragment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_ellipse_top12"
@@ -45,13 +45,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/profile_photos"
+                    android:id="@+id/imageViewPhotosProfileFragment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="-10dp"
                     android:src="@drawable/ic_photo_profile"
-                    app:layout_constraintTop_toTopOf="@+id/profile_background" />
+                    app:layout_constraintTop_toTopOf="@+id/imageViewBackgroundProfileFragment" />
 
                 <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
@@ -59,7 +59,7 @@
             android:background="@android:color/transparent"
             app:layout_collapseMode="pin"/>
                 <ImageView
-                    android:id="@+id/profile_exit"
+                    android:id="@+id/imageViewExitProfileFragment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="30dp"

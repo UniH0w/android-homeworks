@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/eclipse_left"
+        android:id="@+id/imageViewEclipseLeftGetStarted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/ic_eclipse_left" />
 
     <ImageView
-        android:id="@+id/eclipse_top"
+        android:id="@+id/imagViewEclipseTopGetStarted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
         app:srcCompat="@drawable/ic_eclipse_top" />
 
     <TextView
-        android:id="@+id/get_started_text_Lets"
+        android:id="@+id/textViewLetsGetStarted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -33,13 +33,13 @@
         android:text="@string/let_s_get_things_done_on_time"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewMainPhotoGetStarted"
         app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="@+id/imageViewMainPhotoGetStarted"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMainPhotoGetStarted" />
 
     <TextView
-        android:id="@+id/get_started_text_Lorem"
+        android:id="@+id/textViewLoremGetStarted"
         android:layout_width="278dp"
         android:layout_height="99dp"
         android:fontFamily="@font/poppins_medium"
@@ -47,12 +47,12 @@
         android:text="@string/lorem_ipsum_started"
         android:textColor="@color/black"
         android:textSize="13sp"
-        app:layout_constraintEnd_toEndOf="@+id/get_started_text_Lets"
-        app:layout_constraintStart_toStartOf="@+id/get_started_text_Lets"
-        app:layout_constraintTop_toBottomOf="@+id/get_started_text_Lets" />
+        app:layout_constraintEnd_toEndOf="@+id/textViewLetsGetStarted"
+        app:layout_constraintStart_toStartOf="@+id/textViewLetsGetStarted"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLetsGetStarted" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/Get_Started_button"
+        android:id="@+id/ButtonGetStarted"
         android:layout_width="309dp"
         android:layout_height="64dp"
         android:layout_marginTop="36dp"
@@ -63,13 +63,13 @@
         android:textSize="18sp"
 
         app:cornerRadius="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/get_started_text_Lorem"
+        app:layout_constraintEnd_toEndOf="@+id/textViewLoremGetStarted"
         app:layout_constraintHorizontal_bias="0.516"
-        app:layout_constraintStart_toStartOf="@+id/get_started_text_Lorem"
-        app:layout_constraintTop_toBottomOf="@+id/get_started_text_Lorem" />
+        app:layout_constraintStart_toStartOf="@+id/textViewLoremGetStarted"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoremGetStarted" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewMainPhotoGetStarted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="204dp"
