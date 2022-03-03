@@ -9,6 +9,7 @@
 
     <ImageView
         android:id="@+id/main_ellipse_left"
+        android:id="@+id/main_elipse_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,6 +18,7 @@
 
     <ImageView
         android:id="@+id/main_ellipse_top"
+        android:id="@+id/main_elipse_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +27,7 @@
 
     <TextView
         android:id="@+id/registration_text_hello"
+        android:id="@+id/registr_text_Wellcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
@@ -40,6 +43,7 @@
 
     <TextView
         android:id="@+id/registration_text_we_help"
+        android:id="@+id/registr_text_We_help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -50,6 +54,9 @@
         app:layout_constraintEnd_toEndOf="@+id/registration_text_hello"
         app:layout_constraintStart_toStartOf="@+id/registration_text_hello"
         app:layout_constraintTop_toBottomOf="@+id/registration_text_hello" />
+        app:layout_constraintEnd_toEndOf="@+id/registr_text_Wellcome"
+        app:layout_constraintStart_toStartOf="@+id/registr_text_Wellcome"
+        app:layout_constraintTop_toBottomOf="@+id/registr_text_Wellcome" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputLayoutNameRegistration"
@@ -71,6 +78,10 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/registration_text_we_help"
         app:layout_constraintTop_toBottomOf="@+id/registration_text_we_help">
+        app:layout_constraintEnd_toEndOf="@+id/registr_text_We_help"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/registr_text_We_help"
+        app:layout_constraintTop_toBottomOf="@+id/registr_text_We_help">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextName"

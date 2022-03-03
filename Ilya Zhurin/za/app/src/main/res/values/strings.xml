@@ -32,5 +32,7 @@
     <string name="pager_work">Work</string>
     <string name="pager_entertainment">Entertainment</string>
     <string name="pager_study">Study</string>
-
+    <string name="sign_in_regisration">Sign In</string>
+    <string name="enter_your_email_main">Enter your email</string>
+    <string name="confirm_password_main">Confirm password</string>
 </resources>
