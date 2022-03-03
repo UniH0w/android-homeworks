@@ -44,10 +44,10 @@
         app:layout_constraintEnd_toEndOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@drawable/ic_pictere1" />
+        app:srcCompat="@drawable/ic_picture1" />
 
     <TextView
-        android:id="@+id/main_text_dont_have"
+        android:id="@+id/main_text_have"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/MainSign_button" />
 
     <TextView
-        android:id="@+id/main_text_singn_up"
+        android:id="@+id/main_text_sign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -71,12 +71,12 @@
         android:gravity="center"
         android:text="@string/sign_up"
         android:textColor="@color/yellow"
-        app:layout_constraintEnd_toEndOf="@+id/main_text_dont_have"
-        app:layout_constraintStart_toStartOf="@+id/main_text_dont_have"
-        app:layout_constraintTop_toBottomOf="@+id/main_text_dont_have" />
+        app:layout_constraintEnd_toEndOf="@+id/main_text_have"
+        app:layout_constraintStart_toStartOf="@+id/main_text_have"
+        app:layout_constraintTop_toBottomOf="@+id/main_text_have" />
 
     <ImageView
-        android:id="@+id/main_elipse_left"
+        android:id="@+id/main_ellipse_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,7 +84,7 @@
         app:srcCompat="@drawable/ic_eclipse_left" />
 
     <ImageView
-        android:id="@+id/main_elipse_top"
+        android:id="@+id/main_ellipse_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"

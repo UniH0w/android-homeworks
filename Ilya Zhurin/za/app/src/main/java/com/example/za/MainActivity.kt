@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
-        binding.mainTextSingnUp.setOnClickListener {
+        binding.mainTextSignUp.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
         }
